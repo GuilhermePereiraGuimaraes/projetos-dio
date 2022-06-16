@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightgray;
+}
+.personal_photo{
+    width: 100px;
+}
+
+#title, .subtitle, .post-title{
+    color: blue;
+}
+.post-title {
+    font-size: 16px;
+    font-style: italic;
+}
+.post{
+    background-color: white;
+    padding: 15px;
+    border: 2px solid black;
+}
+.article_img{
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+}
