@@ -1,14 +1,22 @@
 @charset "UTF-8";
 
+:root{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
 body{
     background-color: lightgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90rem;
+    margin: auto;
 }
 .personal_photo{
-    width: 100px;
+    width: 10rem;
     border-radius: 50%;
 }
-
+p{
+    font-size: 1.6rem;
+}
 a{
     text-decoration: none;
     color: crimson;
@@ -18,32 +26,44 @@ a{
     color: rgba(26, 26, 26, 0.884);
 }
 #title{
-    font-size: 40px;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 .post_title {
-    font-size: 20px;
+    font-size: 2rem;
     font-style: italic;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 .post{
     background-color: white;
-    padding: 15px;
+    padding: 1.5rem;
     border: 2px solid black;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
 }
 .post_img{
-    width: 50%;
+    width: 70%;
     margin: 0;
     display: block;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 2rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 .post_content{
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+footer .contact-list{
+    list-style-type: "\1F680";
+    font-size: 2rem;
+    padding: 0px;
+    padding-inline: 3rem;
+}
+footer .contact-list>li{
+    padding-inline: .5rem;
 }
