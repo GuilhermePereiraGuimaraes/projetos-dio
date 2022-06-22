@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            border: 1px solid black;
+            
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            background-color: crimson;
+            color: white;
+
+            padding: 5px;
+            flex: 1;
+
+            text-align: center;
+            margin: 5px;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h2>stretch</h2>
+    <div class="container stretch">
+        <div class="item">aliquam temporibus enim quasi sit nostrum.</div>
+        <div class="item">quis sapiente veniam doloribus eos id.</div>
+        <div class="item">Necessitatibus ea nulla quos corrupti, </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Perferendis dolorum voluptate omnis in,</div>
+        <div class="item">dolor sit amet consectetur</div>
+        <div class="item">Necessitatibus ea nulla</div>
+    </div>
+
+    <h2>center</h2>
+    <div class="container center">
+        <div class="item"> temporibus enim quasi sit nostrum.</div>
+        <div class="item">doloribus eos id.</div>
+        <div class="item"> ea nulla quos corrupti, </div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Perferendis  omnis in,</div>
+        <div class="item">dolor sit amet consectetur</div>
+        <div class="item"> ea nulla</div>
+    </div>
+
+    <h2>flex-start</h2>
+    <div class="container flex-start">
+        <div class="item">aliquam temporibus enim quasi sit nostrum.</div>
+        <div class="item">quis sapiente veniam doloribus eos id.</div>
+        <div class="item">Necessitatibus ea nulla quos corrupti, </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Perferendis dolorum voluptate omnis in,</div>
+        <div class="item">dolor sit amet consectetur</div>
+        <div class="item">Necessitatibus ea nulla</div>
+    </div>
+    
+    <h2>flex-end</h2>
+    <div class="container flex-end">
+        <div class="item">aliquam temporibus enim quasi sit nostrum.</div>
+        <div class="item">quis sapiente veniam doloribus eos id.</div>
+        <div class="item">Necessitatibus ea nulla quos corrupti, </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Perferendis dolorum voluptate omnis in,</div>
+        <div class="item">dolor sit amet consectetur</div>
+        <div class="item">Necessitatibus ea nulla</div>
+    </div>
+
+    <h2>space-between</h2>
+    <div class="container space-between">
+        <div class="item">aliquam temporibus enim quasi sit nostrum.</div>
+        <div class="item">quis sapiente veniam doloribus eos id.</div>
+        <div class="item">Necessitatibus ea nulla quos corrupti, </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Perferendis dolorum voluptate omnis in,</div>
+        <div class="item">dolor sit amet consectetur</div>
+        <div class="item">Necessitatibus ea nulla</div>
+    </div>
+
+    <h2>space-around</h2>
+    <div class="container space-around">
+        <div class="item">aliquam temporibus enim quasi sit nostrum.</div>
+        <div class="item">quis sapiente veniam doloribus eos id.</div>
+        <div class="item">Necessitatibus ea nulla quos corrupti, </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Perferendis dolorum voluptate omnis in,</div>
+        <div class="item">dolor sit amet consectetur</div>
+        <div class="item">Necessitatibus ea nulla</div>
+    </div>
+</body>
+</html>

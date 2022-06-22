@@ -32,24 +32,32 @@
         .space-around{
             justify-content: space-around;
         }
+        .column{
+            flex-direction: column;
+            min-height: 500px;
+        }
+        .column > .item{
+            /* width: 100px; */
+        }
     </style>
 </head>
 <body>
-    <h1>Justify Content flex end</h1>
+    <h1>row</h1>
+    <h2>Justify Content flex end</h2>
     <section class="container flex-end">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
     </section>
 
-    <h1>Justify Content flex center</h1>
+    <h2>Justify Content flex center</h2>
     <section class="container flex-center">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
     </section>
 
-    <h1>Justify Content space-between</h1>
+    <h2>Justify Content space-between</h2>
     <section class="container space-between">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
@@ -59,8 +67,50 @@
         <div class="item">Item 6</div>
     </section>
 
-    <h1>Justify Content space-around</h1>
+    <h2>Justify Content space-around</h2>
     <section class="container space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </section>
+
+    <h1>column</h1>
+    <h2>Justify Content flex end</h2>
+    <section class="container flex-end column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>Justify Content flex start</h2>
+    <section class="container column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>Justify Content flex center</h2>
+    <section class="container flex-center column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h2>Justify Content space-between</h2>
+    <section class="container space-between column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </section>
+
+    <h2>Justify Content space-around</h2>
+    <section class="container space-around column">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
