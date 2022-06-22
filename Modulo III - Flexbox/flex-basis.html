@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        .container{
+            max-width: 1000px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            background-color: darkmagenta;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+        }
+        .b-auto{
+            flex-basis: auto;
+        }
+        .b-zero{
+            flex-basis: 0;
+        }
+        .flex-grow-0{
+            flex-grow: 0;
+        }
+        .flex-grow-1{
+            flex-grow: 1;
+        }
+        .flex-grow-2{
+            flex-grow: 2;
+        }
+        .flex-grow-3{
+            flex-grow: 3;
+        }
+        .w100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>auto</h2>
+    <div class="container">
+        <div class="item b-auto flex-grow-1">A</div>
+        <div class="item b-auto flex-grow-1">BBB</div>
+        <div class="item b-auto flex-grow-1">C</div>
+        <div class="item b-auto flex-grow-2">DEF</div>
+    </div>
+
+    <h2>0 (Zero)</h2>
+    <div class="container">
+        <div class="item b-zero flex-grow-1">A</div>
+        <div class="item b-zero flex-grow-1">BBB</div>
+        <div class="item b-zero flex-grow-1">C</div>
+        <div class="item b-zero flex-grow-1">DEF</div>
+    </div>
+
+    <h2>basis + width</h2>
+    <div class="container">
+        <div class="item w100 flex-grow-1">A</div>
+        <div class="item w100 flex-grow-1">BBB</div>
+        <div class="item w100 flex-grow-1">C</div>
+        <div class="item w100 flex-grow-1">DEF</div>
+        <div class="item w100 flex-grow-1">A</div>
+        <div class="item w100 flex-grow-1">BBB</div>
+        <div class="item w100 flex-grow-1">C</div>
+        <div class="item w100 flex-grow-1">DEF</div>
+        <div class="item w100 flex-grow-1">A</div>
+        <div class="item w100 flex-grow-3">BBB</div>
+        <div class="item w100 flex-grow-3">C</div>
+        <div class="item w100 flex-grow-3">DEF</div>
+    </div>
+</body>
+</html>

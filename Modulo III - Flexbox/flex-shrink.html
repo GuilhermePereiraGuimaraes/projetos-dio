@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 500px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        .item{
+            background-color: seagreen;
+            color: white;
+            font-size: 24px;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fs-1{
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+        .fs-0{
+            flex-shrink: 0;
+            /* flex-basis: 100px; */
+        }
+        .fs-2{
+            flex-shrink: 2;
+            /* flex-basis: 100px;  */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item fg-1 fs-1">A</div>
+        <div class="item fg-1 fs-1">B</div>
+        <div class="item fg-1 fs-1">C</div>
+        <div class="item fg-1 fs-1">D</div>
+        <div class="item fg-1 fs-1">E</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="item fg-1 fs-2">A</div>
+        <div class="item fg-1 fs-2">B</div>
+        <div class="item fg-1 fs-1">C generated</div>
+        <div class="item fg-1 fs-1">D generated  generated</div>
+        <div class="item fg-1 fs-2">E</div>
+    </div>
+</body>
+</html>
