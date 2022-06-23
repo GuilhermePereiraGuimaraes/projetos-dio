@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Flex</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+            height: 500px;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .item{
+            background-color: blue;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+        }
+        .flex-1{
+            flex: 1;
+            /* grow= 1; shrink= 1; basis= 0 */
+        }
+        .flex-2{
+            flex: 2;
+        }
+        .largura{
+            width: 300px;
+            /* min-width: 150px; */
+            /* ele ignora o width mas não o min-width */
+        }
+    </style>
+</head>
+<body>
+    <h2>flex: 1</h2>
+    <div class="container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CD</div>
+        <div class="item flex-1">E</div>
+        <div class="item flex-1">FG</div>
+    </div>
+
+    <h2>flex: mix</h2>
+    <div class="container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-2">CD</div>
+        <div class="item flex-1">E</div>
+        <div class="item flex-1">FG</div>
+    </div>
+
+    <h2>width ignored -> flex basis</h2>
+    <div class="container">
+        <div class="item flex-2 largura">A</div>
+        <div class="item flex-1 largura">BBB</div>
+        <div class="item flex-1 largura">CD</div>
+        <div class="item flex-1 largura">E</div>
+        <div class="item largura">FG</div>
+    </div>
+</body>
+</html>
