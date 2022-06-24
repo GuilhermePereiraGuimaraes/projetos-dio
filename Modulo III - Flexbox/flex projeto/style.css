@@ -15,20 +15,23 @@ a{
     text-decoration: none;
 }
 #header-main{
-    background-color: darkblue;
-    padding: 40px;
+    background-color: #102956;
+    padding: 50px;
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 20px;
 }
 #header-main h2, ul{
     flex: 1;
+    margin-inline: 50px;
 }
 #header-main ul{
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
 }
 #header-main ul li{
     flex: 1;
@@ -36,4 +39,39 @@ a{
 #header-main ul a{
     color: white;
     font-weight: bold;
+    font-size: 14px;
+}
+
+section#title{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+section#title > div{
+    flex: 1;
+}
+.div-left1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-left1 div{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.div-left1 > div h1{
+    font-size: 48px;
+    color: #102956;
+}
+.button{
+    background-color: #102956;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
 }
