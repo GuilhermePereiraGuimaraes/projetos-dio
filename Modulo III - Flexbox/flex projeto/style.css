@@ -23,7 +23,8 @@ a{
     align-items: center;
     margin-bottom: 20px;
 }
-#header-main h2, ul{
+#header-main ul,
+#header-main h2{
     flex: 1;
     margin-inline: 50px;
 }
@@ -42,6 +43,7 @@ a{
     font-size: 14px;
 }
 
+section#about,
 section#title{
     display: flex;
     padding: 30px;
@@ -51,13 +53,13 @@ section#title{
 section#title > div{
     flex: 1;
 }
-.div-left1{
+.div-text{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.div-left1 div{
+.div-text div{
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -65,13 +67,56 @@ section#title > div{
     align-items: flex-start;
     gap: 20px;
 }
-.div-left1 > div h1{
+.div-text > div h1{
     font-size: 48px;
     color: #102956;
 }
+.div-text > div h2{
+    color: #102956;
+    border-left: 5px solid #102956;
+    padding-left: 5px;
+    font-size: 28px;
+}
+
 .button{
     background-color: #102956;
     color: white;
     padding: 10px 40px;
     border-radius: 20px;
+}
+
+section#services{
+    background-color: #102956;
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#services h2{
+    font-size: 35px;
+    margin-left: 5%;
+}
+
+#products{
+    margin-left: 5%;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    gap: 19%;
+    align-items: baseline;
+}
+
+#products li{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#products li>p{
+    font-weight: bold;
+    font-size: 16px;
+}
+#products a.bt-service{
+    background-color: white;
+    color: #102956;
 }
