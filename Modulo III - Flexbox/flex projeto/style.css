@@ -85,29 +85,35 @@ section#title > div{
     border-radius: 20px;
 }
 
-section#services{
-    background-color: #102956;
-    color: white;
+.div-text-2{
     padding: 60px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
-#services h2{
-    font-size: 30px;
+.div-text-2 h2{
+    font-size: 35px;
     margin-left: 5%;
 }
 
-#products{
+section#services{
+    background-color: #102956;
+    color: white;
+}
+
+.div-flex{
     margin-left: 5%;
     display: flex;
     padding: 20px;
-    gap: 20%;
-    align-self: center;
     text-align: center;
-    align-items: flex-end;
+    align-self: center;
     justify-content: center;
+    
+}
+#products{
+    align-items: flex-end;
     width: 50%;
+    gap: 20%;
 }
 
 #products li{
@@ -123,4 +129,52 @@ section#services{
 #products a.bt-service{
     background-color: white;
     color: #102956;
+}
+
+
+#plans{
+    align-items: flex-end;
+    width: 80%;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 5px solid #102956;
+    align-items: center;
+    margin-right: 5%;
+}
+.plan :not(a){
+    flex: 1;
+    padding: 10px;
+}
+.plan h3{
+    width: 70%;
+    font-size: 26px;
+    color: #102956;
+    border-bottom: 3px solid #102956;
+    margin-bottom: 20px;
+}
+.plan a{
+    margin-block: 20px;
+}
+.plan ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: start;
+    width: 100%;
+}
+
+footer{
+    padding: 30px;
+    background-color: #102956;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50%;
+    height: 30px;
+}
+footer p{
+    flex: 1;
 }
