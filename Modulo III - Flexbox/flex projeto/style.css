@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
 :root{
-    
+    /* hue:219; */
+    --hue: 245;
+    --primary-color: hsl(var(--hue), 69%, 20%);
+    font-size: 62.5%;
+}
+html{
+    scroll-behavior: smooth;
 }
 *{
     padding: 0;
@@ -14,39 +20,69 @@ ul{
 a{
     text-decoration: none;
 }
+ul,p{
+    font-size: 1.6rem;
+}
 #header-main{
-    background-color: #102956;
-    padding: 50px;
+    background-color: var(--primary-color);
+    padding: 5rem;
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
-#header-main ul,
+#header-main .menu,
 #header-main h2{
     flex: 1;
-    margin-inline: 50px;
+    margin-inline: 5rem;
+    font-size: 3rem;
 }
-#header-main ul{
+#header-main .menu{
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
 }
-#header-main ul li{
-    flex: 1;
+#header-main .menu li{
+    transition: 300ms;
+    margin-right: 15%;
 }
-#header-main ul a{
+#header-main .menu li:hover{
+    opacity: 1;
+}
+#header-main .menu li,
+#header-main .menu li:active{
+    opacity: 0.6;
+}
+#header-main .menu a{
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
+}
+.menu li a::after{
+    content: '';
+    width: 0%;
+    height: .2rem;
+    background-color: white;
+    
+    position: relative;
+    bottom: -1.8rem;
+    left: -1rem;
+
+    display: block;
+    transition: width 300ms;
+}
+.menu li a:hover::after{
+    width: 100%;
+    padding-inline: 1rem;
+    text-align: center;
 }
 
 section#about,
 section#title{
     display: flex;
-    padding: 30px;
+    padding: 3rem;
     align-items: center;
     justify-content: center;
 }
@@ -65,46 +101,54 @@ section#title > div{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 2rem;
 }
 .div-text > div h1{
-    font-size: 48px;
-    color: #102956;
+    font-size: 4.8rem;
+    color: var(--primary-color);
 }
 .div-text > div h2{
-    color: #102956;
-    border-left: 5px solid #102956;
-    padding-left: 5px;
-    font-size: 28px;
+    color: var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+    padding-left: .5rem;
+    font-size: 2.8rem;
 }
 
 .button{
-    background-color: #102956;
+    background-color: var(--primary-color);
     color: white;
-    padding: 10px 40px;
-    border-radius: 20px;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    transition: 300ms;
+    font-size: 1.6rem;
+}
+.button:hover{
+    opacity: 0.7;
+}
+.button:active{
+    opacity: 1;
 }
 
 .div-text-2{
-    padding: 60px;
+    padding: 6rem;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 5rem;
 }
 .div-text-2 h2{
-    font-size: 35px;
+    font-size: 3.5rem;
     margin-left: 5%;
 }
 
 section#services{
-    background-color: #102956;
+    background-color: var(--primary-color);
     color: white;
 }
 
 .div-flex{
     margin-left: 5%;
     display: flex;
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
     align-self: center;
     justify-content: center;
@@ -120,15 +164,15 @@ section#services{
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
 }
 #products li>p{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 #products a.bt-service{
     background-color: white;
-    color: #102956;
+    color: var(--primary-color);
 }
 
 
@@ -139,24 +183,24 @@ section#services{
 .plan{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    border: 5px solid #102956;
+    padding: 2rem;
+    border: 5px solid var(--primary-color);
     align-items: center;
     margin-right: 5%;
 }
 .plan :not(a){
     flex: 1;
-    padding: 10px;
+    padding: 1rem;
 }
 .plan h3{
     width: 70%;
-    font-size: 26px;
-    color: #102956;
-    border-bottom: 3px solid #102956;
-    margin-bottom: 20px;
+    font-size: 2.6rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 2rem;
 }
 .plan a{
-    margin-block: 20px;
+    margin-block: 2rem;
 }
 .plan ul{
     list-style-type: disc;
@@ -166,14 +210,14 @@ section#services{
 }
 
 footer{
-    padding: 30px;
-    background-color: #102956;
+    padding: 3rem;
+    background-color: var(--primary-color);
     color: white;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 50%;
-    height: 30px;
+    height: 3rem;
 }
 footer p{
     flex: 1;
