@@ -15,6 +15,13 @@ ul{
 a{
     text-decoration: none;
 }
+p{
+    font-size: 1.2em;
+}
+div img{
+    display: block;
+    width: 100%;
+}
 
 .flex-container{
     display: flex;
@@ -66,4 +73,33 @@ header .menu{
     justify-content: center;
     font-size: 19px;
     margin-block: 10px;
+}
+
+#who-we-are{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+#who-we-are div{
+    margin-right: 20px;
+}
+#who-we-are h2{
+    font-size: 32px;
+    color: #122A57;
+    display: flex ;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#who-we-are h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+#who-we-are p{
+    margin-bottom: 10px;
+    width: 90%;
+    text-align: justify;
 }
