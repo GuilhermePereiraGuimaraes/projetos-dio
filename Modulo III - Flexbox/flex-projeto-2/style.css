@@ -103,3 +103,55 @@ header .menu{
     width: 90%;
     text-align: justify;
 }
+#who-we-are img{
+    min-width: 420px;
+}
+
+.container-external{
+    background-color: #122A57;
+    width: 100%;
+}
+
+#services{
+    flex-direction: column;
+    padding: 50px 0 100px 0;
+}
+#services h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.list-services{
+    display: flex;
+    justify-content: space-between;
+}
+.list-services .item-service{
+    text-align: center;
+
+}
+.item-service img{
+    width: 80%;
+    margin: auto;
+}
+.item-service p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+.item-service a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    background-color: white;
+    border-radius: 30px;
+    height: 30px;
+    padding:5px 10px;
+    margin: auto;
+    margin-top: 20px;
+    color: #122A57;
+    font-size: 14px;
+    font-weight: 700;
+}
