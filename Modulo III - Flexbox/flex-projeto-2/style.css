@@ -62,7 +62,7 @@ header .menu{
     font-size: 48px;
     margin-bottom: 10px;
 }
-.text-apresentation a{
+.btn{
     background-color: #122A57;
     color: white;
     border-radius: 30px;
@@ -154,4 +154,56 @@ header .menu{
     color: #122A57;
     font-size: 14px;
     font-weight: 700;
+}
+
+#plans{
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+#plans h2{
+    font-size: 32px;
+}
+.list-plans{
+    display: flex;
+    align-items: flex-end;
+}
+.list-plans .btn{
+    margin: auto;
+    margin-bottom: 10px;
+}
+.item-plan{
+    flex: 1;
+    border: 4px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.item-plan ul{
+    list-style-type: square;
+    list-style-position: inside;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.item-plan ul li{
+    margin-bottom: 10px;
+    font-size: 18px;
+    flex: 1;
+}
+.item-plan h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.item-plan h3::after{
+    content: "";
+    background-color: #122A57;
+    width: 90%;
+    margin: auto;
+    height: 3px;
+    margin-block: 10px;
 }
