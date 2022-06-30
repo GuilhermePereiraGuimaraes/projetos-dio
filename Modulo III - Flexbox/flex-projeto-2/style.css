@@ -28,6 +28,8 @@ div img{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
+    padding: 10px 15px;
 }
 header{
     background-color: #122A57;
@@ -167,20 +169,21 @@ header .menu{
 .list-plans{
     display: flex;
     align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 .list-plans .btn{
     margin: auto;
     margin-bottom: 10px;
 }
 .item-plan{
-    flex: 1;
     border: 4px solid #122A57;
     margin-right: 20px;
     padding: 10px;
     text-align: center;
+    max-width: 250px;
 }
 .item-plan ul{
-    list-style-type: square;
     list-style-position: inside;
     margin-bottom: 10px;
     padding: 20px;
@@ -189,9 +192,19 @@ header .menu{
     align-items: flex-start;
 }
 .item-plan ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
     margin-bottom: 10px;
     font-size: 18px;
-    flex: 1;
+}
+.item-plan ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 20px;
 }
 .item-plan h3{
     font-size: 24px;
@@ -206,4 +219,58 @@ header .menu{
     margin: auto;
     height: 3px;
     margin-block: 10px;
+}
+
+footer{
+    background-color: #122A57;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+footer .footer{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+    .flex-container{
+        flex-direction: column;
+    }
+    .apresentation{
+        flex-direction: column-reverse;
+    }
+    .apresentation img{
+        width: 70%;
+        margin: auto;
+    }
+    .apresentation .text-apresentation{
+        width: 100%;
+    }
+    #who-we-are{
+        flex-direction: column;
+    }
+    #who-we-are img{
+        min-width: 320px;
+        margin: auto;
+    }
+    .list-services{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .item-service img{
+        width: 20%;
+        margin: auto;
+    }
+    .list-plans{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .list-plans .item-plan{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
 }
