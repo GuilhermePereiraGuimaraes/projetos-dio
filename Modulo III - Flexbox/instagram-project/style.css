@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #FAFAFA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p, a{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+div.wrapper{
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+div.cell-phone{
+    padding: 10px;
+    margin-top: 25px;
+}
+div.cell-phone img{
+    max-width: 350px;
+    width: 100%;
+}
+
+div.continue-login{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    gap: 10px;
+}
+.continue-login .login{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid #DBDBDB;
+}
+.continue-login>div{
+    width: 100%;
+    padding: 20px;
+}
+.login img{
+    max-width: 200px;
+}
+.login .insta-img{
+    margin-top: 25px;
+}
+.login #perfil-img{
+    max-width: 100px;
+    border-radius: 50%;
+}
+.login .btn-continue{
+    padding: 5px 20px;
+    background-color: #0095F6;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.div-text p{
+    display: inline;
+}
+.div-text a{
+    color: #0095F6;
+    font-weight: 600;
+}
+.register{
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+}
+.apps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.apps img{
+    max-width: 150px;
+}
+.apps .apps-link{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+@media screen and (max-width: 875px) {
+    div.cell-phone{
+        display: none;
+    }
+}
