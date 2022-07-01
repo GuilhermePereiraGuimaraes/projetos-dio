@@ -68,12 +68,43 @@ div.continue-login{
     font-weight: 600;
     border-radius: 3px;
 }
+.btn-continue:hover{
+    opacity: 0.9;
+}
+.btn-continue:active{
+    background-color: #016aaf;
+}
 .div-text p{
     display: inline;
 }
 .div-text a{
     color: #0095F6;
     font-weight: 600;
+    display: inline-block;
+}
+.div-text a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #0095F6;
+
+    position: relative;
+    bottom: -5px;
+    left: -5px;
+
+    display: block;
+    transition: width 300ms;
+}
+.div-text a:hover::after{
+    width: 90%;
+    text-align: center;
+    padding-inline: 10px;
+}
+.div-text a:active{
+    color: #016aaf;
+}
+.div-text a:active::after{
+    background-color: #016aaf;
 }
 .register{
     background-color: white;
