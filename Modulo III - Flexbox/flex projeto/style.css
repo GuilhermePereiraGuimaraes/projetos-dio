@@ -23,6 +23,10 @@ a{
 ul,p{
     font-size: 1.6rem;
 }
+section img{
+    display: block;
+    width: 100%;
+}
 #header-main{
     background-color: var(--primary-color);
     padding: 5rem;
@@ -94,6 +98,7 @@ section#title > div{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex: 1;
 }
 .div-text div{
     display: flex;
@@ -142,6 +147,17 @@ section#title > div{
 section#about{
     margin-bottom: 4rem;
 }
+section#about img{
+    max-width: 52rem;
+}
+section#about .div-text div{
+    width: 80%;
+}
+section#about p{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
 section#services{
     background-color: var(--primary-color);
     color: white;
@@ -158,12 +174,11 @@ section#services{
 }
 #products{
     align-items: flex-end;
-    width: 50%;
-    gap: 20%;
+    width: 100%;
+    justify-content: space-around;
 }
 
 #products li{
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -205,12 +220,21 @@ section#services{
     margin-block: 2rem;
 }
 .plan ul{
-    list-style-type: disc;
     list-style-position: inside;
     text-align: start;
     width: 100%;
 }
-
+.plan ul li{
+    display: flex;
+    align-items: center;
+}
+.plan ul li::before{
+    content: "";
+    width: .8rem;
+    height: .8rem;
+    background-color: var(--primary-color);
+    margin-right: 2rem;
+}
 footer{
     padding: 3rem;
     background-color: var(--primary-color);
@@ -223,4 +247,38 @@ footer{
 }
 footer p{
     flex: 1;
+}
+
+@media screen and (max-width: 992px) {
+    
+    section#title > .div-text div{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    section#title .div-right{
+        display: none;
+    }
+
+    section#about{
+        flex-direction: column;
+    }
+
+    #products{
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        flex-direction: column;
+    }
+
+    #plans{
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        flex-direction: column;
+    }
+    #plans .plan{
+        width: 50%;
+    }
 }
