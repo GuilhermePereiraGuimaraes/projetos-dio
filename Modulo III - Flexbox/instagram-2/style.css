@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.insta-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.phone img{
+    height: 40rem;
+}
+
+.continue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+    gap: 10px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+.group:nth-child(1){
+    min-height: 19rem;
+}
+.logo{
+    margin-top: 1rem;
+    height: 3rem;
+}
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 1rem;
+
+}
+.profile-photo img{
+    height: 7rem;
+}
+.btn-login{
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.btn-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.not-account{
+    color: rgb(150, 150, 150);
+}
+.link-blue{
+    color: #0095f6;
+}
+
+.mobile-apps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.apps{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.app{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app:nth-child(1){
+    background-image: url(./images/apple-store-btn.png);
+}
+.app:nth-child(2){
+    background-image: url(./images/google-play-btn.png);
+}
+
+@media screen and (max-width: 1024px) {
+    .insta-wrapper{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 700px) {
+    body{
+        background-color: white;
+    }
+    .insta-wrapper{
+        width: 90%;
+    }
+    .phone{
+        display: none;
+    }
+    .continue{
+        width: 100%;
+    }
+    .group{
+        border: none;
+    }
+}
