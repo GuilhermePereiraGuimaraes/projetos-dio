@@ -11,9 +11,9 @@
     <h1>Contador</h1>
     <p>Clique nos botões para alterar o valor</p>
     <div id="counter">
-        <button name="subtrair" onclick="decrement()">-</button>
+        <button name="subtrair" onclick="decrement(this)" id="sub">-</button>
         <span id="currentNumber">0</span>
-        <button name="adicionar" onclick="increment()">+</button>
+        <button name="adicionar" onclick="increment(this)" id="add">+</button>
     </div>
     <script src="./assets/JS/script.js"></script>
 </body>
