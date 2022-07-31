@@ -22,3 +22,8 @@ function multiplicacao(x,y) {
 }
 
 console.log(op(multiplicacao, 3, 4))
+
+function argumentos() {
+    return arguments[0]
+}
+console.log(argumentos(2, "string", true))
