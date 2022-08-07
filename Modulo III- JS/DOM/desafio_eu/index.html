@@ -5,8 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio DOM</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <main>
+        <div id="coisas">
+            <h1>Light Mode ON</h1>
+            <button onclick="change(this)">Dark Mode</button>
+        </div>
+    </main>
+    <footer>Basecamp Javascript @Guilherme Pereira Guilherme</footer>
     
+    <script>
+        function change(a) {
+            let main = document.getElementsByTagName('main')[0]
+            let h1 = document.getElementsByTagName('h1')[0]
+            let coisas = document.getElementById("coisas")
+            let footer = document.getElementsByTagName('footer')[0]
+
+            main.classList.toggle("dark-mode")
+            coisas.classList.toggle("dark-mode")
+            footer.classList.toggle("dark-mode")
+
+            if (main.classList.contains('dark-mode')) {
+                h1.innerText = 'Dark Mode ON'
+                a.innerText = 'Light Mode'
+            }
+            else{
+                h1.innerText = 'Light Mode ON'
+                a.innerText = 'Dark Mode'
+            }
+        }
+    </script>
 </body>
 </html>
