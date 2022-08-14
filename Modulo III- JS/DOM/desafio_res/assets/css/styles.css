@@ -5,7 +5,7 @@ body {
 	background-color: #e5e8e8;
 	color: #4e545c;
 	margin: 0;
-	font-family: 'Quicksand';
+	font-family: 'Quicksand', sans-serif;
 }
 
 body.dark-mode {
