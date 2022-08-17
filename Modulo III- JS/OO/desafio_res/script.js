@@ -1,3 +1,4 @@
+// @ts-check
 class ContaBancaria{
     constructor (agencia, numero, tipo) {
         this.agencia = agencia
@@ -59,6 +60,6 @@ class ContaUniversitaria extends ContaBancaria{
 
         this._saldo -= valor
 
-        return saldo
+        return this._saldo
     }
 }
